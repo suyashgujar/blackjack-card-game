@@ -13,6 +13,14 @@ let sumEL = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 function startGame(){
+    renderGame()
+}
+
+
+
+
+
+function renderGame(){
     
     cardsEl.textContent = "Cards: " + firstCard + "  " + secondCard
     sumEL.textContent = "Sum: " + sum
