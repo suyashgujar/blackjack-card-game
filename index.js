@@ -3,12 +3,21 @@ let secondCard = 9
 
 let sum = firstCard + secondCard
 
+let hasBlackJack = false
+let isAlive = true
+
+let message = ""
+
 if (sum < 21){
-    console.log("Do you want to draw a new card ??")
+    message = "Do you want to draw a new card ??"
 }
 else if (sum === 21){
-    console.log("You got the BlackJack !! Congratulations !! ")
+    message = "You got the BlackJack !! Congratulations !! "
+    hasBlackJack = true
 }
 else{
-    console.log("Sorry, You are out of the game")
+    message = "Sorry, You are out of the game"
+    isAlive = false
 }
+
+console.log(message)
