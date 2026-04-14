@@ -1,5 +1,6 @@
-let firstCard = 10
+let firstCard = 8
 let secondCard = 11
+let card = 6
 
 let sum = firstCard + secondCard
 
@@ -9,9 +10,11 @@ let isAlive = true
 let message = ""
 let messageEL = document.getElementById("message-el")
 let sumEL = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
 
-function start(){
+function startGame(){
     
+    cardsEl.textContent = "Cards: " + firstCard + "  " + secondCard
     sumEL.textContent = "Sum: " + sum
 
 
@@ -29,4 +32,9 @@ function start(){
 
     messageEL.textContent = message
 
+}
+
+function newCard(){
+    sum += card
+    startGame()
 }
