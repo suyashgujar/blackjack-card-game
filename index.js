@@ -8,7 +8,9 @@ let isAlive = true
 
 let message = ""
 
-if (sum < 21){
+function start(){
+    
+    if (sum < 21){
     message = "Do you want to draw a new card ??"
 }
 else if (sum === 21){
@@ -20,4 +22,4 @@ else{
     isAlive = false
 }
 
-console.log(message)
+}

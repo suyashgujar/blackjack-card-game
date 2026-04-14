@@ -1,0 +1,44 @@
+@font-face {
+    font-family: swanky;
+    src: url("font/FontdinerSwanky-Regular.ttf");
+}
+
+body{
+    font-family: swanky;
+    text-align: center;
+    font-size: 200%;
+    background-image: url("images/Playing+caards.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+    text-shadow: 2px 2px red;
+    color: #023047;
+   
+
+}
+
+h1{
+    color: #ffb703;
+    margin-top: 100px;
+    text-shadow: 2px 2px rgb(76, 0, 255);
+}
+
+#message-el{
+    margin-top: 30px;
+
+}
+
+#start{
+    width: 230px;
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: larger;
+    color: #ffffff;
+    text-shadow: 2px 2px #ffb703;
+    background-color: #023047;
+}
