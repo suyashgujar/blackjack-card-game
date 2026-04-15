@@ -1,6 +1,7 @@
 let firstCard = 8
 let secondCard = 11
-let card = 6
+
+let cards = [firstCard, secondCard]
 
 let sum = firstCard + secondCard
 
@@ -17,12 +18,19 @@ function startGame(){
 }
 
 
-
-
-
 function renderGame(){
     
-    cardsEl.textContent = "Cards: " + firstCard + "  " + secondCard
+    cardsEl.textContent = "Cards: "
+
+    for (i = 0; i < cards.length; i++){
+        cardsEl.textContent += cards[i] + "   "
+    }
+
+
+
+
+
+
     sumEL.textContent = "Sum: " + sum
 
 
@@ -43,6 +51,8 @@ function renderGame(){
 }
 
 function newCard(){
-    sum += card
+    let anotherCard = 1
+    sum += anotherCard
+    cards.push(anotherCard)
     startGame()
 }
